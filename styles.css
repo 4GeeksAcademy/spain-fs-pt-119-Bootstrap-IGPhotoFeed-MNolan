@@ -1,0 +1,32 @@
+/** {
+	border: 1px dashed red;
+	min-height: 10px;
+}*/
+
+a.navbar-brand{
+    font-size: x-large;
+}
+/* efecto de transicion */
+.img-hover-scale {
+  transition: transform 0.5s ease;
+}
+
+.img-card-hover:hover .img-hover-scale {
+  transform: scale(1.05);
+}
+/* fondo oscuro semi-transparente */
+.overlay-hover {
+  background: rgba(0, 0, 0, 0.5); 
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.img-card-hover:hover .overlay-hover {
+  opacity: 1;
+}
+
+/* dar efecto rounded a todos los divs */
+.img-card-hover img,
+.img-card-hover .card-img-overlay {
+  border-radius: 0.5rem;
+}
